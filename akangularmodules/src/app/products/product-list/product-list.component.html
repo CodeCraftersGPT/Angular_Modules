@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <!-- Add table headers for other columns if needed -->
+        <th>Action</th> <!-- For example, an "Add to Cart" button -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td> <a [routerLink]="['/products', product.name]">{{ product.name }}</a>   </td>
+        <td>{{ product.price | currency }}</td>
+        <!-- Add a table cell for other columns if needed -->
+        <!-- <td><button (click)="addToCart(product)" class="btn btn-primary">Add to Cart</button></td> -->
+      </tr>
+    </tbody>
+  </table>
