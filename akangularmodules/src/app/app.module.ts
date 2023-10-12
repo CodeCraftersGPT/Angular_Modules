@@ -7,18 +7,22 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HomeComponent } from './core/home/home.component';
 import { OrderModule } from './orders/order.module';
+import { LoginComponent } from './core/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    OrderModule
+    OrderModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
