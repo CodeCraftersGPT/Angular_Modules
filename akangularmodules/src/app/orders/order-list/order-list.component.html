@@ -1,1 +1,22 @@
-<p>order-list works!</p>
+
+<div class="container">
+    <h1>Order List</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>product</th>
+                <th>price</th>
+                <th>quantity</th>
+                <th>status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <td>{{ order.product }}</td>
+                <td>{{ order.price }}</td>
+                <td>{{ order.quantity }}</td>
+                <td>{{ order.status |status }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
